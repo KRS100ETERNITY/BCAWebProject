@@ -126,3 +126,50 @@ section h1{
     object-fit: cover;
     border-radius: 10px;
 }
+.product-card h3{
+    margin: 15px 0 10px 0;
+    font-size: 1.5rem;
+    color: #1e1e2f;
+}
+.product-card p{
+    font-size: 0.95rem;
+    color: #555;
+    text-align: justify;
+}
+/*virtual section*/
+.virtual{
+    padding: 60px 20px;
+    background: linear-gradient(135deg,#1cb374,#1270dd);
+    text-align: center;
+}
+.virtual h1{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color:#4a4a4a;
+    position:relative;
+    display: inline-block;
+
+}
+.virtual h1::after{
+    content:"";
+    width: 50%;
+    height: 3px;
+    background-color: #1e1e2f;
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+}
+.virtual div iframe{
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0.8px 2px rgba(0,0,0.2);
+    transition:transform 0.3s ease;
+
+    
+}
+section div iframe:hover{
+    transform: scale(1.02);
+}
